@@ -1,0 +1,140 @@
+@font-face {
+    font-family: myAlphabet;
+    src: url(assets/fonts/BarokahBold.ttf);
+}
+
+h3 {
+    color: #ffffff;
+}
+
+#head {
+    font-family: myAlphabet;
+}
+
+body{
+    background: url(assets/images/bg.png);
+    background-color: #ffffff;
+}
+
+.row {
+    float:left;
+}
+
+button.export {
+    float:right
+}
+
+#alphabet {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    grid-gap: 20px;
+    font-family: myAlphabet;
+    font-size: 50px;
+}
+#alphabet > div {
+    text-align: center;
+    line-height: 1em;
+    cursor:pointer;
+}
+
+#letter_view {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+    background-color: #555555;
+}
+
+.letter_hotspots li {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: #aaaaaa;
+}
+
+.letter_view_inner_img img {
+    position: absolute;
+    height: 100%
+}
+
+.result {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: #333333;
+    color:#ffffff;
+    display: none;
+    z-index: 1000;
+}
+
+#letter_view .letter {
+    position: relative;
+    display: block;
+    width: 50%;
+    height: 100%;
+    float:left;
+    z-index: 20;
+    margin: 0;
+}
+
+.letter_view_inner {
+    position: absolute;
+    width: 80vh;
+    height: 100%;
+    display: block;
+    background-size: 100% 100%;
+}
+
+#letter_view .letter p {
+    font-size: 90vh;
+    float: left;
+    padding: 60px;
+    z-index: 20;
+    font-size: 98vh;
+    padding: 80px;
+    float:left;
+    background-color: #444444;
+}
+
+.groups {
+    display: block;
+    position: relative;
+}
+
+.groups .group {
+    display: block;
+    position: relative;
+    margin: 20px 0 20px 0;
+}
+
+.groups .group .new_spot {
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.groups .group .spot {
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 20px 0 0;
+}
+
+#letter_canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
