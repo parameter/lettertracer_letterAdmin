@@ -21,7 +21,7 @@ class LettertracingAdmin {
 
 	initLetterCanvas() {
 
-        var scaledFontsize = $(this.letter_canvas).width() * 0.8;
+        var scaledFontsize = this.letter_canvas.width * 0.5;
 
         console.log('scaledFontsize',scaledFontsize);
 
@@ -31,7 +31,7 @@ class LettertracingAdmin {
         
         this.letter_canvas_ctx.textBaseline = 'middle';
 
-        this.letter_canvas_ctx.fillText(this.currentletter.toLowerCase(), (this.letter_canvas.width/2) - (textWidth / 2), (this.letter_canvas.height/2.5));
+        this.letter_canvas_ctx.fillText(this.currentletter.toLowerCase(), (this.letter_canvas.width/2) - (textWidth / 2), (this.letter_canvas.height/2.25));
     }
 
 	openLetter(target) {
